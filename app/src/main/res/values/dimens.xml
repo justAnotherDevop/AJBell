@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- paddings -->
+    <dimen name="market_details_row_padding">10dp</dimen>
+    <dimen name="market_details_row_preview_padding">20dp</dimen>
+    <dimen name="market_details_text_size">16dp</dimen>
+</resources>

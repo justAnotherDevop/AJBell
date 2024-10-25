@@ -19,12 +19,6 @@
 
     <composable
         android:id="@+id/marketDetailScreen"
-        android:name="com.ajbell.technicaltest.detail.MarketDetailsScreen"
-        android:label="Detail Screen">
-
-        <argument
-            android:name="market"
-            app:argType="com.ajbell.technicaltest.list.MarketListEvent$ShowMarketDetail"
-            />
-    </composable>
+        android:name="com.ajbell.technicaltest.detail.MarketDetailsScreenKt\$MarketDetailScreen"
+        android:label="Detail Screen" />
 </navigation>

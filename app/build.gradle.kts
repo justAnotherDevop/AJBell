@@ -1,8 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
-//    alias(libs.plugins.navigationSafeArgs)
-    id("androidx.navigation.safeargs.kotlin")
+    alias(libs.plugins.navigationSafeArgs)
     id("kotlin-kapt")
     id("kotlin-parcelize")
 }
@@ -60,6 +59,7 @@ dependencies {
     implementation(libs.coroutines.android)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.ui.viewbinding)
+    implementation(libs.androidx.runtime.livedata)
     testImplementation(libs.coroutines.test)
     testImplementation(libs.junit)
 
@@ -71,6 +71,7 @@ dependencies {
     implementation(libs.lifecycle.livedata.ktx)
     testImplementation(libs.core.testing)
     implementation(libs.gson)
+    testImplementation(libs.junit.jupiter)
     androidTestImplementation(libs.core.testing)
     testImplementation(libs.mockk)
     testImplementation(libs.mockk.android)
@@ -90,4 +91,5 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(kotlin("script-runtime"))
+    debugImplementation(libs.ui.tooling)
 }

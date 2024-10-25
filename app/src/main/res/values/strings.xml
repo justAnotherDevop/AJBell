@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ajbell-technical-test</string>
+    <string name="epic_text">Epic</string>
+    <string name="current_price_text">Current Price</string>
+    <string name="current_change_text">Current Change</string>
+    <string name="current_change_percentage">Current Change Percentage</string>
+    <string name="back_content_desc_text">Back</string>
 </resources>

@@ -30,7 +30,7 @@ fun MarketAppNavHost(navController: NavHostController, mainActivity: MainActivit
             })
         ) { backStackEntry ->
             val marketDetail = backStackEntry.arguments?.getParcelable<MarketListEvent.ShowMarketDetail>("market")
-            MarketDetailScreen(navController, marketDetail)
+//            MarketDetailScreen(navController, marketDetail)
         }
 
     }
