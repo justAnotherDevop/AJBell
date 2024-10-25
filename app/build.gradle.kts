@@ -1,7 +1,9 @@
+
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     alias(libs.plugins.navigationSafeArgs)
+    alias(libs.plugins.daggerHilt)
     id("kotlin-kapt")
     id("kotlin-parcelize")
 }
@@ -48,6 +50,13 @@ android {
         compose = true
     }
 
+    tasks.withType<Test> {
+        useJUnitPlatform()
+    }
+
+    kapt {
+        correctErrorTypes = true
+    }
 }
 
 dependencies {
@@ -87,6 +96,9 @@ dependencies {
     implementation ("androidx.navigation:navigation-fragment-compose:2.8.2")
     implementation(libs.androidx.material3)
     implementation(libs.androidx.ui.graphics.android)
+
+    implementation("com.google.dagger:hilt-android:2.51.1")
+    kapt("com.google.dagger:hilt-compiler:2.51.1")
 
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

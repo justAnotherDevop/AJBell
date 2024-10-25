@@ -3,8 +3,11 @@ package com.ajbell.technicaltest.data
 import com.ajbell.technicaltest.InterviewApplication
 import com.ajbell.technicaltest.MainActivity
 import com.google.gson.GsonBuilder
+import javax.inject.Inject
+import javax.inject.Singleton
 
-internal class MarketRepository {
+@Singleton
+internal class MarketRepository @Inject constructor() {
 
     fun getMarkets(): GetMarketsResponse {
         val marketsJson: String = InterviewApplication.context.assets.open("markets.json")

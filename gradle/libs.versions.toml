@@ -28,6 +28,7 @@ uiViewbinding = "1.7.4"
 uiTooling = "1.7.4"
 runtimeLivedata = "1.7.4"
 junitJupiter = "5.8.1"
+daggerHilt = "2.51.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -57,6 +58,7 @@ nav-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-
 nav-ui-ktx = { group = "androidx.navigation",name = "navigation-ui-ktx", version.ref = "nav" }
 lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
 lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle" }
+
 core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "core-testing" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 junit = { module = "junit:junit", version.ref = "junit" }
@@ -74,4 +76,4 @@ junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.r
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 navigationSafeArgs = { id = "androidx.navigation.safeargs.kotlin", version.ref = "nav"}
-
+daggerHilt = { id = "com.google.dagger.hilt.android", version.ref = "daggerHilt"}

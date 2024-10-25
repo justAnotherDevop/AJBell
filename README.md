@@ -7,7 +7,7 @@
       Current Price
       Current Change
       Current Change Percentage
-4. Use proper state composables to display the MarketDetailScreen effectively. (Des. consider also screen rotation)
+4. Use proper state composables to display the MarketDetailScreen effectively.
 5. Ensure that any business logic in the ViewModel is covered by unit tests.
 6. After completing the first task, what would you choose to do next? In this task we would like to see which would be your next priority and why. (Des, DI)
 7. If you had more time what would you improve?
@@ -23,6 +23,8 @@ Talk about modularization
 
 Investing best setup practices on Chat gpt
 We could remove unused libs from the libs.toml file to reduce noise
+
+Remove local git
 
 
 

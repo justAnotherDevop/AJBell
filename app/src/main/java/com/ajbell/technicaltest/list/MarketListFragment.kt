@@ -10,7 +10,9 @@ import androidx.navigation.fragment.findNavController
 import com.ajbell.technicaltest.R
 import com.ajbell.technicaltest.databinding.FragmentMarketListBinding
 import com.ajbell.technicaltest.list.MarketListEvent.ShowMarketDetail
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 internal class MarketListFragment : Fragment() {
 
     private val viewModel by viewModels<MarketListViewModel>()
