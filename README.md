@@ -11,7 +11,7 @@
 5. Ensure that any business logic in the ViewModel is covered by unit tests.
 6. After completing the first task, what would you choose to do next? In this task we would like to see which would be your next priority and why.
    * I would try and do some refactoring to avoid using the data layer object in the ui layer.    
-7. I would also add some dependency injection, which I ended up doing using Hilt. One of the reasons for this was so that I could properly test the viewModels.
+   * I would also add some dependency injection, which I ended up doing using Hilt. One of the reasons for this was so that I could properly test the viewModels.
 7. If you had more time what would you improve?
       * I'd further improve the MVVM by adding clean arch. This would introduce a clear separation of concerns across the 
       different layers. We'd have 3 layers, namely, ui, domain, and data. 
