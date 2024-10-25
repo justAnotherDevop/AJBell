@@ -1,14 +1,14 @@
 package com.ajbell.technicaltest.detail
 
 import androidx.lifecycle.Observer
-import com.ajbell.technicaltest.testutil.InstantTaskExecutorExtension
 import com.ajbell.technicaltest.data.GetMarketsResponse
+import com.ajbell.technicaltest.testutil.InstantTaskExecutorExtension
 import io.mockk.MockKAnnotations
 import io.mockk.every
 import io.mockk.impl.annotations.RelaxedMockK
 import io.mockk.mockk
 import io.mockk.verify
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith

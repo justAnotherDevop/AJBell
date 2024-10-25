@@ -1,7 +1,6 @@
 package com.ajbell.technicaltest.data
 
 import com.ajbell.technicaltest.InterviewApplication
-import com.ajbell.technicaltest.MainActivity
 import com.google.gson.GsonBuilder
 import javax.inject.Inject
 import javax.inject.Singleton

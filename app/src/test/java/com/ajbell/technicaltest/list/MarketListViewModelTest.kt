@@ -5,22 +5,14 @@ import com.ajbell.technicaltest.data.GetMarketsResponse
 import com.ajbell.technicaltest.data.MarketRepository
 import com.ajbell.technicaltest.testutil.InstantTaskExecutorExtension
 import com.ajbell.technicaltest.testutil.MainCoroutineExtension
-import io.mockk.Called
 import io.mockk.MockKAnnotations
-import io.mockk.coVerify
 import io.mockk.every
 import io.mockk.impl.annotations.RelaxedMockK
 import io.mockk.mockk
 import io.mockk.verify
-import junit.framework.TestCase.assertEquals
-import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.test.runTest
-import org.junit.Rule
-import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
-import org.mockito.Mock
 
 @ExtendWith(
     InstantTaskExecutorExtension::class,
