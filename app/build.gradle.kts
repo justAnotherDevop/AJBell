@@ -60,6 +60,7 @@ android {
 }
 
 dependencies {
+    kapt(libs.dagger.compiler)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -69,15 +70,23 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.ui.viewbinding)
     implementation(libs.androidx.runtime.livedata)
-    testImplementation(libs.coroutines.test)
-    testImplementation(libs.junit)
-
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.activity.compose)
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.ui.graphics)
+    implementation(libs.androidx.ui.tooling.preview)
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.navigation.fragment.compose)
+    implementation(libs.dagger.hilt.android)
+    implementation(libs.androidx.material3)
+    implementation(libs.androidx.ui.graphics.android)
     implementation(libs.activity.ktx)
     implementation(libs.fragment.ktx)
     implementation(libs.material)
     implementation(libs.nav.fragment.ktx)
     implementation(libs.nav.ui.ktx)
     implementation(libs.lifecycle.livedata.ktx)
+
     testImplementation(libs.core.testing)
     implementation(libs.gson)
     testImplementation(libs.junit.jupiter)
@@ -85,20 +94,8 @@ dependencies {
     testImplementation(libs.mockk)
     testImplementation(libs.mockk.android)
     testImplementation(libs.assertk)
-
-// clean this up
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
-    implementation("androidx.activity:activity-compose:1.8.0")
-    implementation(platform("androidx.compose:compose-bom:2024.04.01"))
-    implementation("androidx.compose.ui:ui:1.6.0")
-    implementation("androidx.compose.ui:ui-graphics:1.6.0")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.6.0")
-    implementation ("androidx.navigation:navigation-fragment-compose:2.8.2")
-    implementation(libs.androidx.material3)
-    implementation(libs.androidx.ui.graphics.android)
-
-    implementation("com.google.dagger:hilt-android:2.51.1")
-    kapt("com.google.dagger:hilt-compiler:2.51.1")
+    testImplementation(libs.coroutines.test)
+    testImplementation(libs.junit)
 
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
